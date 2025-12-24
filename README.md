@@ -55,9 +55,9 @@ Python has a built in base64 module
 
 XOR has three key properties:
 
--`A XOR B = C`
--`C XOR B = A`
--`A XOR A = 0`
+```A XOR B = C
+C XOR B = A
+A XOR A = 0```
 
 # Scoring
 - You get 100❤️ if you solve all the case where you use your own recipient nickname and unique hash_key.
