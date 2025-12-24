@@ -5,7 +5,7 @@ Kent is trying to send his friends a message for Christmas, sadly, an evil twink
 
 # Task Details
 
-In this task you are required to create two functions. A base64 decoder that takes in one input `data` of type `bytes` and a XOR decoder that takes in two inputs `data` of type `bytes` and `hash_key` of type `int`. 
+In this task you are required to create two functions. A base64 decoder that takes in one input `data` of type `bytes` then returns a `bytes` datatype and a XOR decoder that takes in two inputs `data` of type `bytes` and `hash_key` of type `int`. 
 
 The base64 decoder reads the contents of the text file `{recipient_nickname}_encrypted.txt` using data and returns bytes of information, which is then used as input in the XOR decoder alongside the unique `hash_key` given alongside your respective emails.
 
@@ -23,6 +23,12 @@ def decode_letter(recipient: str, hash_key: int):
 
     with open(out_name, "wb") as f:
         f.write(decoded)
+```
+```
+def base64_decoder(data: bytes) -> bytes:
+    ...
+def xor_decoder(data: bytes, hash_key: int) -> bytes:
+    ...
 ```
 *for the recipient, enter your respective name from the list provided below*
 ```
